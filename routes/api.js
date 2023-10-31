@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const fs = require('fs');
+const path = require('path');
 // Đọc tệp JSON
-const data = JSON.parse(fs.readFileSync('./data/dataTongTheNhaMay.json', 'utf8'));
-
+const dataPath = path.join(process.cwd(), 'data', 'dataTongTheNhaMay.json');
+// Đọc nội dung tệp JSON
+const jsonData = fs.readFileSync(dataPath, 'utf-8');
+const data = JSON.parse(jsonData)
 router.get("/dataTongTheNhaMay", async (req, res, next) => {
   return res.status(200).json({
     success: true,
