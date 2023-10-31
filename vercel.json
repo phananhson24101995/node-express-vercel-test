@@ -9,8 +9,8 @@
       "dest": "/"
     },
     {
-      "src": "/api/dataTongTheNhaMay/([^/]+)",
-      "dest": "/dataTongTheNhaMay/$1"
+      "src": "/data/dataTongTheNhaMay.json",
+      "dest": "/data/dataTongTheNhaMay.json"
     }
   ]
 }
