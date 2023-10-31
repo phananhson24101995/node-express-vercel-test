@@ -8,6 +8,7 @@ app.use(express.json());
 
 // Routes
 app.use("/home", home);
+app.use("/api", getapi)
 
 // connection
 const port = process.env.PORT || 9001;
