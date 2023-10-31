@@ -7,6 +7,9 @@
   "functions": {
     "routes/api.js": {
       "memory": 128
+    },
+    "env": {
+      "DATA_FOLDER": "data"
     }
   },
   "routes": [{
