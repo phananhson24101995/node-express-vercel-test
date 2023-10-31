@@ -10,7 +10,7 @@
     },
     {
       "src": "/data/(.*)",
-      "dest": "/data/"
+      "dest": "/data/$1"
     }
   ]
 }
