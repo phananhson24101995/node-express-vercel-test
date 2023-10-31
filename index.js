@@ -1,7 +1,7 @@
 // Import packages
 const express = require("express");
 const home = require("./routes/home");
-
+const getapi = require("./routes/api");
 // Middlewares
 const app = express();
 app.use(express.json());
