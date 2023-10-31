@@ -4,11 +4,13 @@
     "src": "./index.js",
     "use": "@vercel/node"
   }],
+  "functions": {
+    "routes/api.js": {
+      "memory": 128
+    }
+  },
   "routes": [{
     "src": "/(.*)",
-    "dest": "/"
-  }],
-  "data": [{
     "dest": "/"
   }]
 }
