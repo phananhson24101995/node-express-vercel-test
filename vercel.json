@@ -9,8 +9,11 @@
       "dest": "/"
     },
     {
-      "src": "/data/(.*)",
-      "dest": "/data/$1"
+      "src": "/api/dataTongTheNhaMay.json",
+      "headers": {
+        "cache-control": "no-store"
+      },
+      "dest": "/data/dataTongTheNhaMay.json"
     }
   ]
 }
