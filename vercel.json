@@ -11,6 +11,10 @@
     {
       "src": "/data/dataTongTheNhaMay.json",
       "dest": "/data/dataTongTheNhaMay.json"
+    },
+    {
+      "src": "/api/.*",
+      "dest": "/index.js"
     }
   ]
 }
